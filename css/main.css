@@ -11,95 +11,12 @@ body {
     height: 100%;/**/
     overflow: auto;/**/
 }
-/*
-@font-face {
-    font-family: 'sweetly_brokenregular';
-    src: url('../fonts/font0/font-webfont.eot');
-    src: url('../fonts/font0/font-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/font0/font-webfont.woff') format('woff'),
-         url('../fonts/font0/font-webfont.ttf') format('truetype'),
-         url('../fonts/font0/font-webfont.svg#sweetly_brokenregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'opificioregular';
-    src: url('../fonts/font1/opificio-webfont.eot');
-    src: url('../fonts/font1/opificio-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/font1/opificio-webfont.woff') format('woff'),
-         url('../fonts/font1/opificio-webfont.ttf') format('truetype'),
-         url('../fonts/font1/opificio-webfont.svg#opificioregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'mustafaregular';
-    src: url('../fonts/font2/azamat_kodzoevmustafa-webfont.eot');
-    src: url('../fonts/font2/azamat_kodzoevmustafa-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/font2/azamat_kodzoevmustafa-webfont.woff') format('woff'),
-         url('../fonts/font2/azamat_kodzoevmustafa-webfont.ttf') format('truetype'),
-         url('../fonts/font2/azamat_kodzoevmustafa-webfont.svg#mustafaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'kb_chopinscriptregular';
-    src: url('../fonts/font3/chopin-webfont.eot');
-    src: url('../fonts/font3/chopin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/font3/chopin-webfont.woff') format('woff'),
-         url('../fonts/font3/chopin-webfont.ttf') format('truetype'),
-         url('../fonts/font3/chopin-webfont.svg#kb_chopinscriptregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'olietta_script_lyricaBdIt';
-    src: url('../fonts/font4/olietta_script_lyrica-webfont.eot');
-    src: url('../fonts/font4/olietta_script_lyrica-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/font4/olietta_script_lyrica-webfont.woff') format('woff'),
-         url('../fonts/font4/olietta_script_lyrica-webfont.ttf') format('truetype'),
-         url('../fonts/font4/olietta_script_lyrica-webfont.svg#olietta_script_lyricaBdIt') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'parisian_normal';
-    src: url('../fonts/font5/parisian-webfont.eot');
-    src: url('../fonts/font5/parisian-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/font5/parisian-webfont.woff') format('woff'),
-         url('../fonts/font5/parisian-webfont.ttf') format('truetype'),
-         url('../fonts/font5/parisian-webfont.svg#parisian_normal') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'mistralregular';
-    src: url('../fonts/font6/mistral-webfont.eot');
-    src: url('../fonts/font6/mistral-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/font6/mistral-webfont.woff') format('woff'),
-         url('../fonts/font6/mistral-webfont.ttf') format('truetype'),
-         url('../fonts/font6/mistral-webfont.svg#mistralregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'marck_scriptregular';
-    src: url('../fonts/font7/marckscript-regular-webfont.eot');
-    src: url('../fonts/font7/marckscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/font7/marckscript-regular-webfont.woff') format('woff'),
-        url('../fonts/font7/marckscript-regular-webfont.ttf') format('truetype'),
-        url('../fonts/font7/marckscript-regular-webfont.svg#marck_scriptregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-*/
 @font-face {
     font-family: 'current_font';
     src: url('../fonts/current_font.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-/*@import url(http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic);*/
 header h2 {
     font-family: 'current_font', cursive;
     font-size: 48pt;
@@ -233,21 +150,6 @@ article ol {
     list-style-image: none;
     list-style-type: decimal;
 }
-ul.hyperlinks {
-    list-style-image: none;
-    list-style-type: none;
-}
-ul.hyperlinks li:hover {
-    list-style-image: url(../img/right_arrow.png);
-}
-ul.hyperlinks a {
-    color: #000;
-}
-ul.hyperlinks a:hover {
-    list-style-image: none;
-    color: #70AAFF;
-    text-decoration: underline;
-}
 a.rev_button {
     display: block;
     text-align: center;
@@ -269,7 +171,7 @@ a.rev_button:hover {
 }
 div.centre {
     margin: 0 auto;
-    width: 10%;
+    width: 35%;
 }
 p.expt {
 	text-indent: 1cm;
@@ -281,42 +183,18 @@ cite {
     display: block;
     text-align: center;
 }
-p.video {
-   	text-align: center;
-    margin: 0 auto;
-}
 aside {
-    padding: 0;
     margin: 0;
+    padding: 0;
     overflow: auto;
 }
-figure {
+.avatar {
     margin: 0;
     padding: 3px;
+    padding-left: 10px;
     overflow: auto;
     border: 2px solid #70AAFF;
     border-radius: 10px;
-}
-img {
-    border: 1px white;
-    border-radius: 5px;
-    width: 100%;
-}
-/*
-img.noborder {
-   width: 100%;
-   /overflow: hidden;
-   border: 0;
-   border-radius: 0;
-   margin-bottom: 0;
-   padding-bottom: 0;
-}
-*/
-figcaption {
-    text-align: center;
-    font-style: italic;
-    color: gray;
-    font-family: serif;
 }
 .sc {
     font-variant: small-caps;
@@ -325,15 +203,19 @@ figcaption {
 a {
     text-decoration: none;
 }
-/*
-a:hover {
-     font-weight: bold;
-}
-*/
 footer {
     clear: both;
     text-align: center
 }
 .red {
     color: red;
+}
+.error {
+    margin: 10px;
+    padding: 3px;
+    overflow: auto;
+    border: 2px solid #F00;
+    border-radius: 10px;
+    text-align: center;
+    color: #F00;
 }

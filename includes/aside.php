@@ -22,7 +22,7 @@
             {
                 echo 'Потребител';
             }
-    		echo '<br><a href="logout.php">Изход</a></div>';
+    		echo '<div class="centre"><a href="logout.php" class="rev_button">Изход</a></div></div>';
     	}
     	?>
     </aside>
