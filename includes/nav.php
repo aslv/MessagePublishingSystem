@@ -10,6 +10,9 @@
                 <a href="add_category.php">Добави категория съобщения</a>
             </li>
             <li>
+                <a href="register.php">Регистрирай нов потребител</a>
+            </li>
+            <li>
                 <a href="logout.php">Излез от системата</a>
             </li>
         </ul>

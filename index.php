@@ -11,7 +11,7 @@ function valid_user($username, $password)
 	$connection = db_connect($GLOBALS['db_host'], $GLOBALS['db_user'], $GLOBALS['db_pass'], $GLOBALS['db']);
 	$username = mysqli_real_escape_string($connection, $username);
 	$password = mysqli_real_escape_string($connection, $password);
-	$q = mysqli_query($connection, 'SELECT * FROM users WHERE username="' . $username . '"') or die(error_query());
+	$q = mysqli_query($connection, 'SELECT password FROM users WHERE username="' . $username . '"') or die(error_query());
 	if (mysqli_num_rows($q) == 1)
 	{
 		$row = mysqli_fetch_assoc($q);
@@ -41,6 +41,7 @@ if ($_POST && isset($_POST['user']) && isset($_POST['pass']))
 	if ($row = valid_user($username, $password))
 	{
 		$_SESSION['isLogged'] = true;
+		$_SESSION['userID'] = $row['user_id'];
 		$_SESSION['username'] = $row['username'];
 		$_SESSION['name'] = $row['name'];
 		$_SESSION['isAdmin'] = $row['is_admin'];
@@ -68,10 +69,6 @@ include 'includes' . DIRECTORY_SEPARATOR . 'header.php';
         		<tr>
         			<td><label for="pass">Парола</label></td>
         			<td><input type="password" id="pass" required name="pass" /></td>
-        		</tr>
-        		<tr>
-        			<td><label for="name">Име</label></td>
-        			<td><input type="password" id="name" name="name" /></td>
         		</tr>
         		<tr>
         			<td colspan="2"><input type="submit" value="Влез" /></td>
