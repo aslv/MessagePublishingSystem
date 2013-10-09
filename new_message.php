@@ -13,6 +13,14 @@ if ($_POST && isset($_POST['title']) && isset($_POST['content']) && isset($_POST
 	$content = mysqli_real_escape_string($connection, $content);
 	$group = (int)mysqli_real_escape_string($connection, $group);
 
+	if (mb_strlen($title) > 50)
+	{
+		die(error('Заглавието на съобщението е прекалено дълго!'));
+	}
+	if (mb_strlen($content) > 250)
+	{
+		die(error('Съдържанието на съобщението е прекалено дълго!'));
+	}
 	if ($title == '' || $content == '' || $group <= 0)
 	{
 		die(error('Въведените данни са невалидни!'));

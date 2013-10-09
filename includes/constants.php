@@ -9,7 +9,7 @@ $db = 'messages_users_storage';
 
 function db_connect($db_host, $db_user, $db_pass, $db) // a sample of singletone
 {
-	static $connection = NULL;
+	static $connection;
 	if ($connection)
 	{
 		return $connection;

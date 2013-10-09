@@ -11,7 +11,7 @@ function valid_user($username, $password)
 	$connection = db_connect($GLOBALS['db_host'], $GLOBALS['db_user'], $GLOBALS['db_pass'], $GLOBALS['db']);
 	$username = mysqli_real_escape_string($connection, $username);
 	$password = mysqli_real_escape_string($connection, $password);
-	$q = mysqli_query($connection, 'SELECT password FROM users WHERE username="' . $username . '"') or die(error_query());
+	$q = mysqli_query($connection, 'SELECT * FROM users WHERE username="' . $username . '"') or die(error_query());
 	if (mysqli_num_rows($q) == 1)
 	{
 		$row = mysqli_fetch_assoc($q);

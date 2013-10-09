@@ -194,7 +194,7 @@ table.msg {
     border: 2px solid #70AAFF;
     border-spacing: 5px;
     border-radius: 10px;
-    /*max-width: 71%;*/
+    overflow: auto;
 }
 table.msg tr {
     border: 2px solid #70AAFF;
@@ -252,4 +252,7 @@ footer {
     text-align: center;
     color: #0F0;
     background-color: #EAFFEA;
+}
+.content {
+    word-wrap: break-word;
 }

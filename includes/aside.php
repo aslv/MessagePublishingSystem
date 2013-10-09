@@ -5,7 +5,7 @@
     		echo '
     		<div class="avatar">
     			Здравей, <span class="sc">';
-            if ($_SESSION['name'] != '')
+            if ($_SESSION['name'])
             {
                 echo $_SESSION['name'];
             }

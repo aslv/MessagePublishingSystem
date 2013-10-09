@@ -93,14 +93,16 @@ $q = mysqli_query($connection, $query) or die(error_query());
             <?php
             while ($row = mysqli_fetch_assoc($q))
             {
-                echo '<tr><td>' . $row['message_id'] . '</td><td>' . $row['datetime'] . '</td><td>' . $row['username'] . '</td><td>' 
-                 . $row['name'] . '</td><td>' . $row['msg'] . '</td><td>' . $row['gr'] . '</td></tr>';
-                echo '<tr><td colspan="4">' . $row['content'] . '</td>';
+                echo '<tr><td>' . $row['message_id'] . '</td><td>' . $row['datetime'] . '</td><td>'
+                 . wordwrap($row['username'], 20, '<br>', true) . '</td><td>' 
+                 . wordwrap($row['name'], 20, '<br>', true) . '</td><td>' . wordwrap($row['msg'], 20, '<br>', true) . '</td><td>'
+                 . wordwrap($row['gr'], 20, '<br>', true). '</td></tr>';
+                echo '<tr><td colspan="4">' . wordwrap($row['content'], 50, '<br>', true) . '</td>';
                 if ($_SESSION['isAdmin']) // only admin may edit or delete, user does not have permission
                 {
                     echo
-                    '<td><a href="edit.php?message=' . $row['message_id'] . '"><img src="img' . DIRECTORY_SEPARATOR . 'edit.png" /></a></td>
-                <td><a href="delete.php?message=' . $row['message_id'] . '"><img src="img' . DIRECTORY_SEPARATOR . 'delete.png" /></a></td>';
+                    '<td><a href="edit.php?message=' . $row['message_id'] . '"><img src="img/edit.png" /></a></td>
+                <td><a href="delete.php?message=' . $row['message_id'] . '"><img src="img/delete.png" /></a></td>';
                 }
                 else
                 {
